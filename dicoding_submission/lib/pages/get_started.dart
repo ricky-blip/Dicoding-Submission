@@ -13,7 +13,7 @@ class GetStartedPages extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Apps",
+              "Hello User",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 30,

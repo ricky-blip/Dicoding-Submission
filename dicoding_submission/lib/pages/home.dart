@@ -18,7 +18,7 @@ class _HomePagesState extends State<HomePages> {
     return Scaffold(
       backgroundColor: Colors.black87,
       appBar: AppBar(
-        title: Text("Welcome back user"),
+        title: Text("Welcome Back User"),
         backgroundColor: Colors.amber,
       ),
       body: Center(
