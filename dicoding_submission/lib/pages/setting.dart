@@ -11,7 +11,7 @@ class SettingPages extends StatelessWidget {
         backgroundColor: Colors.amber,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(25),
+        padding: const EdgeInsets.all(50),
         child: Center(
           //NOTE Column Parent
           child: Column(
@@ -31,8 +31,7 @@ class SettingPages extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 30),
-
+              SizedBox(height: 50),
               //NOTE Column 2
               Column(
                 children: [

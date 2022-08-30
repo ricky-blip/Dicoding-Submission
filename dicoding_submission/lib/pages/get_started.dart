@@ -8,26 +8,39 @@ class GetStartedPages extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black87,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "Hello User",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 100),
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Hello User",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
-            ),
-            SizedBox(height: 50),
-            CircleAvatar(
-              backgroundColor: Colors.amber,
-              radius: 100,
-              backgroundImage: NetworkImage(
-                  'https://i.picsum.photos/id/607/200/300.jpg?grayscale&hmac=kV7JeqhuSM1D5Qz-NZspSojsI72lFK4yc3sCOBV6igA'),
-            ),
-          ],
+              SizedBox(height: 50),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.amber,
+                    radius: 100,
+                    backgroundImage: NetworkImage(
+                        'https://i.picsum.photos/id/607/200/300.jpg?grayscale&hmac=kV7JeqhuSM1D5Qz-NZspSojsI72lFK4yc3sCOBV6igA'),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
